@@ -337,8 +337,8 @@ text-align: end;
 .product-container{
   margin-top: 15px;
   overflow: auto;
-max-height: 70vh;
-padding: 20px 10px;
+  max-height: 70vh;
+  padding: 20px;
 }
 .product{
   display: flex;
