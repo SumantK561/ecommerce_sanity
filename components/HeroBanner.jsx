@@ -6,7 +6,6 @@ const HeroBanner = ({ bannerContent }) => {
   return (
     <div className="hero-banner-container">
       <div>
-        <p className="beats-solo">{bannerContent[0].smallText}</p>
         <h3>{bannerContent[0].midText}</h3>
         <h1 className=' text-gray-50'>{bannerContent[0].largeText1}</h1>
         <div className="hero-banner-image mt-12 max-w-lg">
