@@ -21,8 +21,8 @@ const Card = () => {
         <SwiperSlide className='w-60 96 bg-pink-600'></SwiperSlide>
         <SwiperSlide className='w-60 96 bg-gray-600'></SwiperSlide>
         <SwiperSlide className='w-60 96 bg-stone-700'></SwiperSlide>
-        <SwiperSlide className='w-60 96 bg-amber-600'>Slide 8</SwiperSlide>
-        <SwiperSlide className='w-60 96 bg-red-600'>Slide 9</SwiperSlide>
+        <SwiperSlide className='w-60 96 bg-amber-600'></SwiperSlide>
+        <SwiperSlide className='w-60 96 bg-red-600'></SwiperSlide>
       </Swiper>
     </>
   )
