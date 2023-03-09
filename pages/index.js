@@ -4,8 +4,8 @@ import { client } from '../lib/client';
 import { Product, FooterBanner, HeroBanner } from '../components';
 
 const Home = ({ products, bannerData }) => (
-  <div>
-    <HeroBanner heroBanner={bannerData.length && bannerData[0]}  />
+  <div className='mx-6 py-6'>
+    <HeroBanner bannerContent={bannerData.length && bannerData}  />
     <div className="products-heading">
       <h2>Best Seller Products</h2>
       <p>speaker There are many variations passages</p>

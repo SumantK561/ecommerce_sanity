@@ -3,9 +3,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards } from 'swiper';
 import "swiper/css";
 import "swiper/css/effect-cards";
+import { urlFor } from '../../lib/client';
+import Image from 'next/image';
 
 
-const Card = () => {
+const Card = (bannerContent) => {
+
   return (
     <>
       <Swiper
@@ -14,15 +17,17 @@ const Card = () => {
         modules={[EffectCards]}
         className="mySwiper w-72 h-96"
       >
-        <SwiperSlide className='w-60 96 bg-red-600'></SwiperSlide>
-        <SwiperSlide className='w-60 96 bg-blue-600'></SwiperSlide>
-        <SwiperSlide className='w-60 96 bg-green-600'></SwiperSlide>
-        <SwiperSlide className='w-60 96 bg-yellow-600'></SwiperSlide>
-        <SwiperSlide className='w-60 96 bg-pink-600'></SwiperSlide>
-        <SwiperSlide className='w-60 96 bg-gray-600'></SwiperSlide>
-        <SwiperSlide className='w-60 96 bg-stone-700'></SwiperSlide>
-        <SwiperSlide className='w-60 96 bg-amber-600'></SwiperSlide>
-        <SwiperSlide className='w-60 96 bg-red-600'></SwiperSlide>
+
+        {
+          bannerContent && bannerContent.bannerContent && bannerContent.bannerContent.map((element,i) => 
+
+            <SwiperSlide className='w-60 96 rounded-xl  shadow-md' key={element._id}  style={{backgroundImage: 'linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%)' }}>
+              <img src={urlFor(element.image)} alt="headphones"  />
+            </SwiperSlide>
+          )
+
+        }
+
       </Swiper>
     </>
   )
