@@ -7,7 +7,8 @@ const HeroBanner = ({ bannerContent }) => {
     <div className="hero-banner-container">
       <div>
         <h3>Product that meet</h3>
-        <h1 className='text-gray-50'>YOUR Need </h1>
+        <h1 className='text-gray-50'>YOUR </h1>
+        <h1 className='text-gray-50'>Needs </h1>
         <div className="hero-banner-image mt-12 max-w-lg">
           <Card bannerContent = {bannerContent}/>
         </div>
